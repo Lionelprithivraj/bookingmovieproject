@@ -1,0 +1,43 @@
+<div class="row">
+    <h1 class="text-dark" style="text-align: center;">Register to Book My Show</h1>
+    <div class="col-md-4 offset-md-4 col-sm-6 offset-sm-3">
+      <div class="card auth">
+        <div class="card-body auth-card">
+          
+          <form  [formGroup]="regForm" (ngSubmit)="registerUser()">
+            <div class="form-group">
+               
+                UserName: <br>
+                <input type="text" class="form-control" formControlName="username" ><br>
+                <div *ngIf="regForm.get('username')?.touched && regForm.get('username')?.hasError('required')">
+                    <p class="alert alert-danger">Name is mandatory</p>
+                </div>
+                <div *ngIf="regForm.get('username')?.touched && regForm.get('username')?.hasError('pattern')">
+                    <p class="alert alert-danger">Must be only letters min 3 max 10 </p>
+                </div>
+                <div *ngIf="regForm.get('username')?.touched && regForm.get('username')?.hasError('minlength')">
+                    <p class="alert alert-danger">Must be atleast 3 letters </p>
+                </div>
+                Phone_no: <br>
+                <input type="text" class="form-control"   formControlName="mobile_no"><br>
+                <div *ngIf="regForm.get('mobile_no')?.touched && regForm.get('mobile_no')?.hasError('pattern')">
+                    <p class="alert alert-danger">Phone number is mandatory</p>
+                </div>
+                Password: <br>
+                <input type="text" class="form-control"  formControlName="password" ><br>
+                <div *ngIf="regForm.get('password')?.touched && regForm.get('password')?.hasError('pattern')">
+                   
+                </div>
+                Email: <br>
+                <input type="text" class="form-control" formControlName="email" ><br>
+                <div *ngIf="regForm.get('email')?.touched && regForm.get('email')?.hasError('pattern')">
+                    <p class="alert alert-danger">Please Enter a valid Email</p>
+                </div>
+                <input type="submit" value="register">
+
+            </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>

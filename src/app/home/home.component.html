@@ -1,0 +1,80 @@
+
+<!-- A vertical navbar -->
+<div class="row">
+    <div class="col-md-3">
+    <nav class="navbar bg-secondary">
+    
+        <!-- Links -->
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="navbar-brand"><img src="C:\Users\Centrico\sellabank\src\images\projectlogo.png"  width="90" height="75">ADMIN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">DashBoard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Register Theatre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Register Movie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Register Movies To Theatre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ShowTheatres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Show Movies</a>
+          </li>
+          <li class="nav-item homespace">
+            <a routerLink="/login">Logout</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <div class="nav-item ">
+        <a routerLink="/login">Logout</a>g
+      </div> -->
+    </div>
+    
+    <div class="col col-md-9">
+        <div class="container-fluid col-md-6">
+            <form>
+                <h1 style="text-align: center;">Register Movie</h1>
+                <div >
+                    Movie Name
+                    <input type="text" class="form-control form-control" id="movienames" />
+                </div>
+                <div >
+                    Movie Genre:
+                    <select class="form-select " aria-label="Default select example">
+                        <option selected>Select Genre</option>
+                        <option value="1">Action</option>
+                        <option value="2">Thriller</option>
+                        <option value="3">Comedy</option>
+                    </select>
+                </div>
+                <div >
+                    Movie Language:
+                    <select class="form-select " aria-label="Default select example">
+                        <option selected>Select Language</option>
+                        <option value="1">Tamil</option>
+                        <option value="2">English</option>
+                        <option value="3">Telugu</option>
+                    </select>
+                </div>
+                <div class="">
+                    Movie Duration
+                    <input type="text" class="form-control form-control " id="movienames" />
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <button>Insert Movie</button>
+                </div>
+                
+            </form>
+    
+    </div>
+    
+    </div>
+    </div>
+      
